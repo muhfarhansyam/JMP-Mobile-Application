@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Dua Angka"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+
+
+    <EditText
+        android:id="@+id/editTextangka1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="15dp"
+        android:hint="Masukkan Angka Pertama" />
+
+    <EditText
+        android:id="@+id/editTextangka2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="15dp"
+        android:hint="Masukkan Angka Kedua"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttontambah"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="+"
+            android:layout_marginHorizontal="20dp"/>
+
+        <Button
+            android:id="@+id/buttonkurang"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="-"
+            android:layout_marginHorizontal="20dp"/>/>
+
+        <Button
+            android:id="@+id/buttonbagi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="/"
+            android:layout_marginHorizontal="20dp"/>/>
+
+        <Button
+            android:id="@+id/buttonkali"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="x"
+            android:layout_marginHorizontal="20dp"/>/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonclear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bersihkan" />
+
+    <TextView
+        android:id="@+id/texth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hasil"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/texthasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+
+</LinearLayout>
